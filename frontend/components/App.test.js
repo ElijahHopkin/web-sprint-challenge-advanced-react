@@ -1,4 +1,9 @@
 // Write your tests here
-test('sanity', () => {
-  expect(true).toBe(false)
+import React from 'react'
+import {screen, render} from '@testing-library/react'
+import AppClass from './AppClass'
+
+test('AppClass responds to directional buttons', () => {
+  render(<AppClass />)
 })
+
